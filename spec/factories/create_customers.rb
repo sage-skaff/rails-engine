@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :create_customer do
-    first_name { "MyString" }
-    last_name { "MyString" }
+    first_name { Faker::Name.name }
+    last_name { Faker::Name.last_name }
   end
 end
